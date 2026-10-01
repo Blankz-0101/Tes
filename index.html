@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            // 1. Add your Google Doc links inside the brackets below, separated by commas.
+            var googleDocs = [
+                "https://docs.google.com/document/d/1KsfnoMUwaOze5FQ41NxVyhq_rox9LkM_kbobeUHlFFc/edit?usp=drivesdk",
+                "https://docs.google.com/document/d/1yWU8g090g8-TR_sTPcM20Qe-ywznLiuBCU1C6i9fAHo/edit?usp=drivesdk",
+                "https://docs.google.com/document/d/1ePhn28Njc4e9tWuxGdlLoV_P5yGJb-Le_E4vznbMF6Q/edit?usp=drivesdk",
+                "https://docs.google.com/document/d/1qHZpZL1FKkaxpl9rpp9hhyzI00tRv3NaxU87_TbmPQQ/edit?usp=drivesdk",
+                "https://docs.google.com/document/d/1zRTlH6qP3NhVmtLM04Ll0Y6pE4EXLGM4PkeJarSJjYo/edit?usp=drivesdk"
+            ];
+
+            // 2. Select a random link from the list
+            var randomIndex = Math.floor(Math.random() * googleDocs.length);
+            var randomDocUrl = googleDocs[randomIndex];
+
+            // 3. Instantly redirect the user
+            window.location.replace(randomDocUrl);
+        };
+    </script>
+</head>
+<body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+        Loading your document...
+    </p>
+</body>
+</html> 
